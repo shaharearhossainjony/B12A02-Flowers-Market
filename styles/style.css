@@ -154,3 +154,94 @@ body{
 
 }
 /* flower plants card style end */
+
+
+
+/* flower-plants-lover-section start */
+
+.flower-plants-lover-section{
+    display:flex;
+    margin-top:100px;
+    justify-content:space-between;
+    gap:150px;
+    position:relative;
+    
+
+}
+.image-badge{
+    width:131%;
+    margin-left:15px;
+
+}
+.image-big img{
+    width:100%;
+}
+.badge-image img{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top:-85px;
+    left:470px;
+}
+.context{
+    width:100%;
+    
+
+}
+.context h3{
+    color:rgb(0, 0, 0);
+    font-size:50px;
+    font-weight:700;
+}
+.context ul li{
+    color:rgba(0, 0, 0, .5);
+    font-size:24px;
+    font-weight:400px;
+    line-height:27px;
+    margin-top:20px;
+
+
+}
+/* flower-plants-lover-section start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
