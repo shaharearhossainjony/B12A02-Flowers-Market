@@ -252,4 +252,30 @@ h4 {
     outline:none;
 }
 
+footer{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    margin:0 auto;
+    padding:50px 0px;
+}
+.foot-intro-logo{
+    width:350px;
+}
+.foot-intro-logo img{
+padding-bottom:20px;
+}
 
+.foot-link-01 ul, .foot-link-02 ul{
+list-style:none;
+}
+.foot-link-01 ul li, .foot-link-02 ul li{
+padding: 0px 0px 20px 0px;
+font-size:18px;
+
+}
+.foot-link-01 ul li a, .foot-link-02 ul li a{
+color: rgba(0, 0, 0, 0.5);
+text-decoration:none;
+
+}
