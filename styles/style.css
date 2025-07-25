@@ -112,8 +112,7 @@ body {
 
 /* flower plants card style start */
 .our-plants-card-section {
-  /* background-color:red;
-     */
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 20px;
@@ -179,7 +178,10 @@ h4 {
 }
 /* flower-plants-lover-section start */
 
+
+/* latest deals section start */
 .latest-deals {
+  margin: 0px auto;
 }
 .latest-deals-top {
   text-align: center;
@@ -196,16 +198,110 @@ h4 {
   height: 54px;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
-  text-align: centerl;
+ 
 }
 
-.latest-deals-bottom {
-}
-.image-01 {
+
+.promo-section {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    height: 423px;
+    box-sizing: border-box;
+    gap: 16px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+
+
 }
 
-.image-01 h1 {
+.promo-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+    height: 100%;
+    flex-shrink: 0;
 }
+
+.promo-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-card.small {
+    flex: 1;
+
+}
+
+.promo-card.large {
+    flex: 1;
+    height: 100%;
+    border-radius: 22px;
+}
+
+.promo-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10
+}
+
+
+.promo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.promo-overlay.large {
+    height: 100%;
+    padding-bottom: 40px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.promo-discount {
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.shop-link {
+    font-weight: 300;
+    color: white;
+}
+
+.largeH {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* news letter section start */
 .newsletter-section {
   display: flex;
   align-items: center;
@@ -222,60 +318,227 @@ h4 {
 }
 
 .letter-content h1 {
-    color:white;
-    font-size:40px;
-    padding:30px 0px;
+  color: white;
+  font-size: 40px;
+  padding: 30px 0px;
 }
-.letter-content input[type="text"]{
-    height:50px;
-    width:500px;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-    margin-right:0px;
-    padding: 0px 20px ;
+.letter-content input[type="text"] {
+  height: 50px;
+  width: 500px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 0px;
+  padding: 0px 20px;
+}
+.letter-content input[type="button"] {
+  height: 50px;
+  width: 190px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0px 20px;
+  margin-left: 0px;
+  color: white;
+  background-color: #e95a08;
+}
+.letter-content input:hover {
+  border: none;
+  outline: none;
+}
 
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin: 0 auto;
+  padding: 50px 0px;
 }
-.letter-content input[type="button"]{
-    height:50px;
-    width:190px;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-    padding: 0px 20px ;
-    margin-left:0px;
-    color:white;
-    background-color:#E95A08;
+.foot-intro-logo {
+  width: 350px;
 }
-.letter-content input:hover{
-    border:none;
-    outline:none;
+.foot-intro-logo img {
+  padding-bottom: 20px;
 }
 
-footer{
-    display:flex;
-    justify-content:center;
-    gap:70px;
+.foot-link-01 ul,
+.foot-link-02 ul {
+  list-style: none;
+}
+.foot-link-01 ul li,
+.foot-link-02 ul li {
+  padding: 0px 0px 20px 0px;
+  font-size: 18px;
+}
+.foot-link-01 ul li a,
+.foot-link-02 ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .nav-items {
+    margin:0px auto;
+    flex-direction: row;
+    
+    text-align: center;
+    justify-content:space-between;
+
+  }
+  .nav-right ul li .nav1, .nav2 ,.nav3{
+    display:none;
+  }
+
+  .nav-right ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  
+  .hero-section {
+    margin:auto;
+    flex-direction: column-reverse;
+    align-items:left;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-description {
     margin:0 auto;
-    padding:50px 0px;
-}
-.foot-intro-logo{
-    width:350px;
-}
-.foot-intro-logo img{
-padding-bottom:20px;
-}
+    font-size: 16px;
+    padding: 0 10px;
+  }
 
-.foot-link-01 ul, .foot-link-02 ul{
-list-style:none;
-}
-.foot-link-01 ul li, .foot-link-02 ul li{
-padding: 0px 0px 20px 0px;
-font-size:18px;
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
 
-}
-.foot-link-01 ul li a, .foot-link-02 ul li a{
-color: rgba(0, 0, 0, 0.5);
-text-decoration:none;
+  .our-plants-section-title {
+    margin:0px auto;
+    font-size: 36px;
+    width: 100%;
+  }
 
+  .our-plants-section-description {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .our-plants-card-section {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .flower-plants-lover-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .image-badge {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .badge-image img {
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    display:none;
+  }
+
+  .context h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .context ul li {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .latest-deals-top h1 {
+    font-size: 32px;
+  }
+
+  .latest-deals-top p {
+    font-size: 16px;
+    width: 90%;
+    height: auto;
+  }
+
+  .promo-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .promo-cards {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .promo-card {
+    height: 180px;
+  }
+
+  .promo-card.large {
+    width: 100%;
+    height: 200px;
+  }
+
+  .promo-discount,
+  .shop-link,
+  .largeH {
+    font-size: 16px;
+  }
+
+  .newsletter-section {
+    margin:0px auto;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .letter-content h1 {
+    font-size: 28px;
+  }
+
+  .letter-content input[type="text"],
+  .letter-content input[type="button"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .foot-intro-logo,
+  .foot-link-01,
+  .foot-link-02,
+  .social-icons {
+    width: 100%;
+  }
+
+  .social-icons img {
+    margin: 0 5px;
+    width: 24px;
+  }
 }
